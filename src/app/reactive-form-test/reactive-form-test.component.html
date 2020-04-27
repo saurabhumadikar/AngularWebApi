@@ -1,0 +1,28 @@
+<div>
+    <form [formGroup]="EmployeeForm" (ngSubmit)="onSubmit()">
+        <input type="hidden" formControlName="EmployeeID" required>
+        <div class="form-group">
+          <label>FULL NAME</label>
+          <input type="text"  formControlName="FullName" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>POSITION</label>
+          <input  formControlName="Position"  class="form-control">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>EMP CODE</label>
+            <input  formControlName="EMPCode"  class="form-control">
+          </div>
+          <div class="form-group  col-md-6">
+            <label>MOBILE</label>
+            <input  formControlName="Mobile" class="form-control">
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-lg btn-block">SUBMIT</button>
+        </div>
+      </form>
+      
+</div>
